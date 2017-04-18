@@ -16,6 +16,8 @@
 		0587DB601EA6042B00971279 /* YJNetworkDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB5F1EA6042B00971279 /* YJNetworkDomeTests.m */; };
 		0587DB6B1EA6042B00971279 /* YJNetworkDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB6A1EA6042B00971279 /* YJNetworkDomeUITests.m */; };
 		0587DB7B1EA6048300971279 /* YJAFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB7A1EA6048300971279 /* YJAFNetManager.m */; };
+		0587DB8B1EA609ED00971279 /* YJURLManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB8A1EA609ED00971279 /* YJURLManger.m */; };
+		0587DB8E1EA60C1200971279 /* YJRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB8D1EA60C1200971279 /* YJRequestManager.m */; };
 		D8F4682B67911C61C158C72A /* libPods-YJNetworkDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865F2C1F93FAAE95E6C4A602 /* libPods-YJNetworkDome.a */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +57,10 @@
 		0587DB6C1EA6042B00971279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0587DB791EA6047800971279 /* YJAFNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJAFNetManager.h; sourceTree = "<group>"; };
 		0587DB7A1EA6048300971279 /* YJAFNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAFNetManager.m; sourceTree = "<group>"; };
+		0587DB891EA609ED00971279 /* YJURLManger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJURLManger.h; sourceTree = "<group>"; };
+		0587DB8A1EA609ED00971279 /* YJURLManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJURLManger.m; sourceTree = "<group>"; };
+		0587DB8C1EA60C1200971279 /* YJRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJRequestManager.h; sourceTree = "<group>"; };
+		0587DB8D1EA60C1200971279 /* YJRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJRequestManager.m; sourceTree = "<group>"; };
 		10BC495BD3AB2F58910090D8 /* Pods-YJNetworkDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNetworkDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome.debug.xcconfig"; sourceTree = "<group>"; };
 		865F2C1F93FAAE95E6C4A602 /* libPods-YJNetworkDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJNetworkDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE654F29FA93D1495864FE7 /* Pods-YJNetworkDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNetworkDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome.release.xcconfig"; sourceTree = "<group>"; };
@@ -195,6 +201,10 @@
 		0587DB811EA6060A00971279 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				0587DB891EA609ED00971279 /* YJURLManger.h */,
+				0587DB8A1EA609ED00971279 /* YJURLManger.m */,
+				0587DB8C1EA60C1200971279 /* YJRequestManager.h */,
+				0587DB8D1EA60C1200971279 /* YJRequestManager.m */,
 			);
 			name = ViewModel;
 			sourceTree = "<group>";
@@ -409,8 +419,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0587DB8E1EA60C1200971279 /* YJRequestManager.m in Sources */,
 				0587DB4D1EA6042B00971279 /* ViewController.m in Sources */,
 				0587DB4A1EA6042B00971279 /* AppDelegate.m in Sources */,
+				0587DB8B1EA609ED00971279 /* YJURLManger.m in Sources */,
 				0587DB471EA6042B00971279 /* main.m in Sources */,
 				0587DB7B1EA6048300971279 /* YJAFNetManager.m in Sources */,
 			);
