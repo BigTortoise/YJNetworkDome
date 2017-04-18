@@ -7,6 +7,7 @@
 //
 
 #import "YJRequestManager.h"
+#import "YJAFNetManager.h"
 #import "YJURLManger.h"
 
 @implementation YJRequestManager
@@ -24,6 +25,12 @@
     NSLog(@"\n\nget_url %@\n\n" , url);
     /** 判断是否有网络 */
     if (block) block(YJHttpServerStart , @"请求中");
+    
+    [YJAFNetManager GET_Path:url completed:^(NSData *data, id JSONDict) {
+        
+    } failed:^(NSError *error) {
+        
+    }];
     
     /*
      [AFNetClient GET_Path:url completed:^(NSData *stringData, id JSONDict) {
