@@ -1,7 +1,7 @@
 # YJNetworkDome
 AFN框架的二次封装以及JSON与Model的转化  
 ### YJAFNetManager
-对AFNetWorking的封装 
+此类是对AFNetWorking的封装，调用方式如下：
 
 ```
 [YJAFNetManager GET_Path:url completed:^(NSData *stringData, id JSONDict) {
