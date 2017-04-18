@@ -4,21 +4,26 @@ AFN框架的二次封装以及JSON与Model的转化
 对AFNetWorking的封装 
 
 ```
-/**
- 单例
-
- @return 返回单例对象
- */
-+ (instancetype)sharedInstance;
-
-/**
- GET请求 - 无Body参数
-
- @param path 路径
- @param success 请求成功的回调
- @param failed 请求失败的回调
- */
-+ (void)GET_Path:(NSString *)path completed:(YJSuccessBlock)success failed:(YJFailedBlock)failed;
+[YJAFNetManager GET_Path:url completed:^(NSData *stringData, id JSONDict) {
+     // 解析数据
+     [NSClassFromString(classString) analyzeData:stringData resultBlock:^(AnalyzeDataResult ret, id object) {
+     	if (ret == AnalyzeData_Fail) {
+     		if (block) {
+     			block(KCHttpServerError , object);
+     		}
+     	} else if(ret == AnalyzeData_Success){
+     		if (block){
+     			block(KCHttpServerSuccess , object);
+     		}
+     	} else if (ret == AnalyzeData_SessionOut){
+     		// 登录超时的情况
+     	}
+     }];
+     
+     } failed:^(NSError *error) {
+     	NSString * errorMsg = error.localizedFailureReason.length != 0 ? error.localizedFailureReason:@"请求错误<未知原因>" ;
+     	if (block) block(KCHttpServerError,errorMsg);
+     }];
 ```
 
 ### ViewModel

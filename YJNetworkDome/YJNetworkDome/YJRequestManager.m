@@ -33,7 +33,7 @@
     }];
     
     /*
-     [AFNetClient GET_Path:url completed:^(NSData *stringData, id JSONDict) {
+     [YJAFNetManager GET_Path:url completed:^(NSData *stringData, id JSONDict) {
      NSLog(@"JSONDict = %@",JSONDict);
      // 解析数据
      [NSClassFromString(classString) analyzeData:stringData resultBlock:^(AnalyzeDataResult ret, id object) {
