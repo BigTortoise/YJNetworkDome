@@ -1,0 +1,674 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0587DB471EA6042B00971279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB461EA6042B00971279 /* main.m */; };
+		0587DB4A1EA6042B00971279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB491EA6042B00971279 /* AppDelegate.m */; };
+		0587DB4D1EA6042B00971279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB4C1EA6042B00971279 /* ViewController.m */; };
+		0587DB501EA6042B00971279 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0587DB4E1EA6042B00971279 /* Main.storyboard */; };
+		0587DB521EA6042B00971279 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0587DB511EA6042B00971279 /* Assets.xcassets */; };
+		0587DB551EA6042B00971279 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0587DB531EA6042B00971279 /* LaunchScreen.storyboard */; };
+		0587DB601EA6042B00971279 /* YJNetworkDomeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB5F1EA6042B00971279 /* YJNetworkDomeTests.m */; };
+		0587DB6B1EA6042B00971279 /* YJNetworkDomeUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB6A1EA6042B00971279 /* YJNetworkDomeUITests.m */; };
+		0587DB7B1EA6048300971279 /* YJAFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB7A1EA6048300971279 /* YJAFNetManager.m */; };
+		D8F4682B67911C61C158C72A /* libPods-YJNetworkDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865F2C1F93FAAE95E6C4A602 /* libPods-YJNetworkDome.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0587DB5C1EA6042B00971279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0587DB3A1EA6042B00971279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0587DB411EA6042B00971279;
+			remoteInfo = YJNetworkDome;
+		};
+		0587DB671EA6042B00971279 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0587DB3A1EA6042B00971279 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0587DB411EA6042B00971279;
+			remoteInfo = YJNetworkDome;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0587DB421EA6042B00971279 /* YJNetworkDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJNetworkDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0587DB461EA6042B00971279 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		0587DB481EA6042B00971279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		0587DB491EA6042B00971279 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		0587DB4B1EA6042B00971279 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		0587DB4C1EA6042B00971279 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		0587DB4F1EA6042B00971279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0587DB511EA6042B00971279 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0587DB541EA6042B00971279 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0587DB561EA6042B00971279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0587DB5B1EA6042B00971279 /* YJNetworkDomeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJNetworkDomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0587DB5F1EA6042B00971279 /* YJNetworkDomeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNetworkDomeTests.m; sourceTree = "<group>"; };
+		0587DB611EA6042B00971279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0587DB661EA6042B00971279 /* YJNetworkDomeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YJNetworkDomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0587DB6A1EA6042B00971279 /* YJNetworkDomeUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJNetworkDomeUITests.m; sourceTree = "<group>"; };
+		0587DB6C1EA6042B00971279 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0587DB791EA6047800971279 /* YJAFNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJAFNetManager.h; sourceTree = "<group>"; };
+		0587DB7A1EA6048300971279 /* YJAFNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJAFNetManager.m; sourceTree = "<group>"; };
+		10BC495BD3AB2F58910090D8 /* Pods-YJNetworkDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNetworkDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome.debug.xcconfig"; sourceTree = "<group>"; };
+		865F2C1F93FAAE95E6C4A602 /* libPods-YJNetworkDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJNetworkDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9AE654F29FA93D1495864FE7 /* Pods-YJNetworkDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNetworkDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0587DB3F1EA6042B00971279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8F4682B67911C61C158C72A /* libPods-YJNetworkDome.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0587DB581EA6042B00971279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0587DB631EA6042B00971279 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0587DB391EA6042B00971279 = {
+			isa = PBXGroup;
+			children = (
+				0587DB441EA6042B00971279 /* YJNetworkDome */,
+				0587DB5E1EA6042B00971279 /* YJNetworkDomeTests */,
+				0587DB691EA6042B00971279 /* YJNetworkDomeUITests */,
+				0587DB431EA6042B00971279 /* Products */,
+				8AC83D0A130C35A1AAE89BAC /* Pods */,
+				7FF5B0B1A3374CED4C12CBD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0587DB431EA6042B00971279 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB421EA6042B00971279 /* YJNetworkDome.app */,
+				0587DB5B1EA6042B00971279 /* YJNetworkDomeTests.xctest */,
+				0587DB661EA6042B00971279 /* YJNetworkDomeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0587DB441EA6042B00971279 /* YJNetworkDome */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB7D1EA605A700971279 /* Class */,
+				0587DB781EA6043F00971279 /* AFNetworkManager */,
+				0587DB881EA6065C00971279 /* AppDelegate */,
+				0587DB511EA6042B00971279 /* Assets.xcassets */,
+				0587DB531EA6042B00971279 /* LaunchScreen.storyboard */,
+				0587DB561EA6042B00971279 /* Info.plist */,
+				0587DB451EA6042B00971279 /* Supporting Files */,
+			);
+			path = YJNetworkDome;
+			sourceTree = "<group>";
+		};
+		0587DB451EA6042B00971279 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB461EA6042B00971279 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0587DB5E1EA6042B00971279 /* YJNetworkDomeTests */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB5F1EA6042B00971279 /* YJNetworkDomeTests.m */,
+				0587DB611EA6042B00971279 /* Info.plist */,
+			);
+			path = YJNetworkDomeTests;
+			sourceTree = "<group>";
+		};
+		0587DB691EA6042B00971279 /* YJNetworkDomeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB6A1EA6042B00971279 /* YJNetworkDomeUITests.m */,
+				0587DB6C1EA6042B00971279 /* Info.plist */,
+			);
+			path = YJNetworkDomeUITests;
+			sourceTree = "<group>";
+		};
+		0587DB781EA6043F00971279 /* AFNetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB791EA6047800971279 /* YJAFNetManager.h */,
+				0587DB7A1EA6048300971279 /* YJAFNetManager.m */,
+			);
+			name = AFNetworkManager;
+			sourceTree = "<group>";
+		};
+		0587DB7D1EA605A700971279 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB811EA6060A00971279 /* ViewModel */,
+				0587DB801EA605D900971279 /* ViewController */,
+				0587DB7F1EA605C700971279 /* View */,
+				0587DB7E1EA605BD00971279 /* Model */,
+			);
+			name = Class;
+			sourceTree = "<group>";
+		};
+		0587DB7E1EA605BD00971279 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0587DB7F1EA605C700971279 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		0587DB801EA605D900971279 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB4B1EA6042B00971279 /* ViewController.h */,
+				0587DB4C1EA6042B00971279 /* ViewController.m */,
+				0587DB4E1EA6042B00971279 /* Main.storyboard */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
+		0587DB811EA6060A00971279 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		0587DB881EA6065C00971279 /* AppDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				0587DB481EA6042B00971279 /* AppDelegate.h */,
+				0587DB491EA6042B00971279 /* AppDelegate.m */,
+			);
+			name = AppDelegate;
+			sourceTree = "<group>";
+		};
+		7FF5B0B1A3374CED4C12CBD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				865F2C1F93FAAE95E6C4A602 /* libPods-YJNetworkDome.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AC83D0A130C35A1AAE89BAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				10BC495BD3AB2F58910090D8 /* Pods-YJNetworkDome.debug.xcconfig */,
+				9AE654F29FA93D1495864FE7 /* Pods-YJNetworkDome.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0587DB411EA6042B00971279 /* YJNetworkDome */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0587DB6F1EA6042B00971279 /* Build configuration list for PBXNativeTarget "YJNetworkDome" */;
+			buildPhases = (
+				98549BF976666FA0AD39B1F6 /* [CP] Check Pods Manifest.lock */,
+				0587DB3E1EA6042B00971279 /* Sources */,
+				0587DB3F1EA6042B00971279 /* Frameworks */,
+				0587DB401EA6042B00971279 /* Resources */,
+				88F414C02C3AFF013B72FBBA /* [CP] Embed Pods Frameworks */,
+				B9A5989E1D81E38FD888E0AE /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = YJNetworkDome;
+			productName = YJNetworkDome;
+			productReference = 0587DB421EA6042B00971279 /* YJNetworkDome.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0587DB5A1EA6042B00971279 /* YJNetworkDomeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0587DB721EA6042B00971279 /* Build configuration list for PBXNativeTarget "YJNetworkDomeTests" */;
+			buildPhases = (
+				0587DB571EA6042B00971279 /* Sources */,
+				0587DB581EA6042B00971279 /* Frameworks */,
+				0587DB591EA6042B00971279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0587DB5D1EA6042B00971279 /* PBXTargetDependency */,
+			);
+			name = YJNetworkDomeTests;
+			productName = YJNetworkDomeTests;
+			productReference = 0587DB5B1EA6042B00971279 /* YJNetworkDomeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0587DB651EA6042B00971279 /* YJNetworkDomeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0587DB751EA6042B00971279 /* Build configuration list for PBXNativeTarget "YJNetworkDomeUITests" */;
+			buildPhases = (
+				0587DB621EA6042B00971279 /* Sources */,
+				0587DB631EA6042B00971279 /* Frameworks */,
+				0587DB641EA6042B00971279 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0587DB681EA6042B00971279 /* PBXTargetDependency */,
+			);
+			name = YJNetworkDomeUITests;
+			productName = YJNetworkDomeUITests;
+			productReference = 0587DB661EA6042B00971279 /* YJNetworkDomeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0587DB3A1EA6042B00971279 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = devRen;
+				TargetAttributes = {
+					0587DB411EA6042B00971279 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+					};
+					0587DB5A1EA6042B00971279 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0587DB411EA6042B00971279;
+					};
+					0587DB651EA6042B00971279 = {
+						CreatedOnToolsVersion = 8.3.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0587DB411EA6042B00971279;
+					};
+				};
+			};
+			buildConfigurationList = 0587DB3D1EA6042B00971279 /* Build configuration list for PBXProject "YJNetworkDome" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0587DB391EA6042B00971279;
+			productRefGroup = 0587DB431EA6042B00971279 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0587DB411EA6042B00971279 /* YJNetworkDome */,
+				0587DB5A1EA6042B00971279 /* YJNetworkDomeTests */,
+				0587DB651EA6042B00971279 /* YJNetworkDomeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0587DB401EA6042B00971279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0587DB551EA6042B00971279 /* LaunchScreen.storyboard in Resources */,
+				0587DB521EA6042B00971279 /* Assets.xcassets in Resources */,
+				0587DB501EA6042B00971279 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0587DB591EA6042B00971279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0587DB641EA6042B00971279 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		88F414C02C3AFF013B72FBBA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		98549BF976666FA0AD39B1F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B9A5989E1D81E38FD888E0AE /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0587DB3E1EA6042B00971279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0587DB4D1EA6042B00971279 /* ViewController.m in Sources */,
+				0587DB4A1EA6042B00971279 /* AppDelegate.m in Sources */,
+				0587DB471EA6042B00971279 /* main.m in Sources */,
+				0587DB7B1EA6048300971279 /* YJAFNetManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0587DB571EA6042B00971279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0587DB601EA6042B00971279 /* YJNetworkDomeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0587DB621EA6042B00971279 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0587DB6B1EA6042B00971279 /* YJNetworkDomeUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0587DB5D1EA6042B00971279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0587DB411EA6042B00971279 /* YJNetworkDome */;
+			targetProxy = 0587DB5C1EA6042B00971279 /* PBXContainerItemProxy */;
+		};
+		0587DB681EA6042B00971279 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0587DB411EA6042B00971279 /* YJNetworkDome */;
+			targetProxy = 0587DB671EA6042B00971279 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0587DB4E1EA6042B00971279 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0587DB4F1EA6042B00971279 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0587DB531EA6042B00971279 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0587DB541EA6042B00971279 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0587DB6D1EA6042B00971279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0587DB6E1EA6042B00971279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0587DB701EA6042B00971279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10BC495BD3AB2F58910090D8 /* Pods-YJNetworkDome.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YJNetworkDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0587DB711EA6042B00971279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9AE654F29FA93D1495864FE7 /* Pods-YJNetworkDome.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = YJNetworkDome/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDome;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		0587DB731EA6042B00971279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YJNetworkDomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJNetworkDome.app/YJNetworkDome";
+			};
+			name = Debug;
+		};
+		0587DB741EA6042B00971279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = YJNetworkDomeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDomeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/YJNetworkDome.app/YJNetworkDome";
+			};
+			name = Release;
+		};
+		0587DB761EA6042B00971279 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YJNetworkDomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YJNetworkDome;
+			};
+			name = Debug;
+		};
+		0587DB771EA6042B00971279 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = YJNetworkDomeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDomeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = YJNetworkDome;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0587DB3D1EA6042B00971279 /* Build configuration list for PBXProject "YJNetworkDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0587DB6D1EA6042B00971279 /* Debug */,
+				0587DB6E1EA6042B00971279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0587DB6F1EA6042B00971279 /* Build configuration list for PBXNativeTarget "YJNetworkDome" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0587DB701EA6042B00971279 /* Debug */,
+				0587DB711EA6042B00971279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0587DB721EA6042B00971279 /* Build configuration list for PBXNativeTarget "YJNetworkDomeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0587DB731EA6042B00971279 /* Debug */,
+				0587DB741EA6042B00971279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0587DB751EA6042B00971279 /* Build configuration list for PBXNativeTarget "YJNetworkDomeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0587DB761EA6042B00971279 /* Debug */,
+				0587DB771EA6042B00971279 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0587DB3A1EA6042B00971279 /* Project object */;
+}
