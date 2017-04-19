@@ -12,22 +12,20 @@
 
 @implementation YJRequestManager
 /** 获取申请详情 */
-+(void)httpForAprovalDetailWithApplyRequestId:(NSString *)applyId handler:(YJRequestBlock)handler
-{
++ (void)httpForAprovalDetailWithApplyRequestId:(NSString *)applyId handler:(YJRequestBlock)handler {
     [YJURLManger urlForAprovalDetailWithToken:@"Token" applyRequestId:applyId handler:^(NSString *url, id body) {
         [YJRequestManager getRequestWithHttpString:url classString:@"ApprovalDetailModel" httpBlock:handler sessionOutloginSucceess:nil];
     }];
 }
 
 #pragma mark - 请求发起和解析数据
-+(void)getRequestWithHttpString:(NSString *)url classString:(NSString *)classString httpBlock:(YJRequestBlock)block sessionOutloginSucceess:(void(^)())loginSuccess
-{
++ (void)getRequestWithHttpString:(NSString *)url classString:(NSString *)classString httpBlock:(YJRequestBlock)block sessionOutloginSucceess:(void(^)())loginSuccess {
     NSLog(@"\n\nget_url %@\n\n" , url);
     /** 判断是否有网络 */
     if (block) block(YJHttpServerStart , @"请求中");
     
     [YJAFNetManager GET_Path:url completed:^(NSData *data, id JSONDict) {
-        
+//        [NSClassFromString(classString) analyzeDat]
     } failed:^(NSError *error) {
         
     }];
@@ -56,8 +54,7 @@
      */
 }
 
-+(void)postRequestWithHttpString:(NSString *)url params:(NSDictionary *)params classString:(NSString *)classString httpBlock:(YJRequestBlock)block sessionOutloginSucceess:(void(^)())loginSuccess
-{
++ (void)postRequestWithHttpString:(NSString *)url params:(NSDictionary *)params classString:(NSString *)classString httpBlock:(YJRequestBlock)block sessionOutloginSucceess:(void(^)())loginSuccess {
     NSLog(@"\n\npost_url %@\n\n" , url);
     /** 判断是否有网络 */
     if (block) block(YJHttpServerStart , @"请求中");

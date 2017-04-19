@@ -25,6 +25,6 @@ typedef void (^UrlBlock) (NSString * url , id body);
  @param applyId 参数2
  @param handler 回调
  */
-+(void)urlForAprovalDetailWithToken:(NSString *)token applyRequestId:(NSString *)applyId handler:(UrlBlock)handler ;
++ (void)urlForAprovalDetailWithToken:(NSString *)token applyRequestId:(NSString *)applyId handler:(UrlBlock)handler;
 
 @end

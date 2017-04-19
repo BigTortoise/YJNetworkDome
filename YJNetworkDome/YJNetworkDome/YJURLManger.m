@@ -10,9 +10,8 @@
 
 @implementation YJURLManger
 
-+(void)urlForAprovalDetailWithToken:(NSString *)token applyRequestId:(NSString *)applyId handler:(UrlBlock)handler
-{
-    NSString * url;
-     if (handler) handler(url, nil );
++ (void)urlForAprovalDetailWithToken:(NSString *)token applyRequestId:(NSString *)applyId handler:(UrlBlock)handler {
+    NSString * url = @"https://api.seniverse.com/v3/weather/now.json?key=qltdahy3vbzkgioj&location=beijing&language=zh-Hans&unit=c";
+     if (handler) handler(url, nil);
 }
 @end

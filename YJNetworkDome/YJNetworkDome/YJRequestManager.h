@@ -30,5 +30,5 @@ typedef void(^YJRequestBlock)(YJRequestResult result , id object);
  @param applyId 申请人id
  @param handler 回调
  */
-+(void)httpForAprovalDetailWithApplyRequestId:(NSString *)applyId handler:(YJRequestBlock)handler ;
++ (void)httpForAprovalDetailWithApplyRequestId:(NSString *)applyId handler:(YJRequestBlock)handler;
 @end

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		055725AA1EA6E555007537B0 /* YJNowWeatherModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 055725A91EA6E555007537B0 /* YJNowWeatherModel.m */; };
 		0587DB471EA6042B00971279 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB461EA6042B00971279 /* main.m */; };
 		0587DB4A1EA6042B00971279 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB491EA6042B00971279 /* AppDelegate.m */; };
 		0587DB4D1EA6042B00971279 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB4C1EA6042B00971279 /* ViewController.m */; };
@@ -18,6 +19,7 @@
 		0587DB7B1EA6048300971279 /* YJAFNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB7A1EA6048300971279 /* YJAFNetManager.m */; };
 		0587DB8B1EA609ED00971279 /* YJURLManger.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB8A1EA609ED00971279 /* YJURLManger.m */; };
 		0587DB8E1EA60C1200971279 /* YJRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB8D1EA60C1200971279 /* YJRequestManager.m */; };
+		0587DB911EA61A4E00971279 /* YJDataBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0587DB901EA61A4E00971279 /* YJDataBaseModel.m */; };
 		D8F4682B67911C61C158C72A /* libPods-YJNetworkDome.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 865F2C1F93FAAE95E6C4A602 /* libPods-YJNetworkDome.a */; };
 /* End PBXBuildFile section */
 
@@ -39,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		055725A81EA6E555007537B0 /* YJNowWeatherModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJNowWeatherModel.h; sourceTree = "<group>"; };
+		055725A91EA6E555007537B0 /* YJNowWeatherModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJNowWeatherModel.m; sourceTree = "<group>"; };
 		0587DB421EA6042B00971279 /* YJNetworkDome.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YJNetworkDome.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0587DB461EA6042B00971279 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		0587DB481EA6042B00971279 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 		0587DB8A1EA609ED00971279 /* YJURLManger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJURLManger.m; sourceTree = "<group>"; };
 		0587DB8C1EA60C1200971279 /* YJRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJRequestManager.h; sourceTree = "<group>"; };
 		0587DB8D1EA60C1200971279 /* YJRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJRequestManager.m; sourceTree = "<group>"; };
+		0587DB8F1EA61A4E00971279 /* YJDataBaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YJDataBaseModel.h; sourceTree = "<group>"; };
+		0587DB901EA61A4E00971279 /* YJDataBaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YJDataBaseModel.m; sourceTree = "<group>"; };
 		10BC495BD3AB2F58910090D8 /* Pods-YJNetworkDome.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNetworkDome.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome.debug.xcconfig"; sourceTree = "<group>"; };
 		865F2C1F93FAAE95E6C4A602 /* libPods-YJNetworkDome.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YJNetworkDome.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9AE654F29FA93D1495864FE7 /* Pods-YJNetworkDome.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YJNetworkDome.release.xcconfig"; path = "Pods/Target Support Files/Pods-YJNetworkDome/Pods-YJNetworkDome.release.xcconfig"; sourceTree = "<group>"; };
@@ -177,6 +183,10 @@
 		0587DB7E1EA605BD00971279 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				0587DB8F1EA61A4E00971279 /* YJDataBaseModel.h */,
+				0587DB901EA61A4E00971279 /* YJDataBaseModel.m */,
+				055725A81EA6E555007537B0 /* YJNowWeatherModel.h */,
+				055725A91EA6E555007537B0 /* YJNowWeatherModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -424,6 +434,8 @@
 				0587DB4A1EA6042B00971279 /* AppDelegate.m in Sources */,
 				0587DB8B1EA609ED00971279 /* YJURLManger.m in Sources */,
 				0587DB471EA6042B00971279 /* main.m in Sources */,
+				0587DB911EA61A4E00971279 /* YJDataBaseModel.m in Sources */,
+				055725AA1EA6E555007537B0 /* YJNowWeatherModel.m in Sources */,
 				0587DB7B1EA6048300971279 /* YJAFNetManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
