@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "YJRequestManager.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,17 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+    [YJRequestManager httpForNowWeatherModelWithHandler:^(YJRequestResult result, id object) {
+        if (result == YJHttpServerStart) {
+
+        } else if (result == YJHttpServerError){
+            
+        } else if (result == YJHttpServerSuccess){
+            
+        }
+        
+    }];
 }
 
 

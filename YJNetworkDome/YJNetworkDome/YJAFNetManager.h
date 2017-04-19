@@ -15,13 +15,6 @@ typedef void (^YJSpeedBlock)(float  progress);              // 请求下载进�
 @interface YJAFNetManager : NSObject
 
 /**
- 单例
-
- @return 返回单例对象
- */
-+ (instancetype)sharedInstance;
-
-/**
  GET请求 - 无Body参数
 
  @param path 路径

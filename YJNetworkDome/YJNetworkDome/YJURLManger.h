@@ -19,12 +19,10 @@ typedef void (^UrlBlock) (NSString * url , id body);
 @interface YJURLManger : NSObject
 
 /**
- 获取申请详情  (根据具体业务传入url参数)
+ 获取申请详情
  
- @param token 参数1
- @param applyId 参数2
  @param handler 回调
  */
-+ (void)urlForAprovalDetailWithToken:(NSString *)token applyRequestId:(NSString *)applyId handler:(UrlBlock)handler;
++ (void)urlForNowWeatherModelWithHandler:(UrlBlock)handler;
 
 @end

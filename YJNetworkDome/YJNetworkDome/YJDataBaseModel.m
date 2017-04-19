@@ -22,7 +22,7 @@
         if (block) block(AnalyzeData_Fail,@"解析数据错误");
         return nil;
     }
-    // 错误码
+    // 状态码
     NSString *status_code = [[rootDict objectForKey:@"status_code"] isEqual:[NSNull null]] ? nil : [rootDict objectForKey:@"status_code"];
     if (status_code == nil) {
         return rootDict;

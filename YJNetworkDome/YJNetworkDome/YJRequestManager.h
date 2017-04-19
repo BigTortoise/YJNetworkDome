@@ -27,8 +27,7 @@ typedef void(^YJRequestBlock)(YJRequestResult result , id object);
 /**
  获取申请详情
 
- @param applyId 申请人id
  @param handler 回调
  */
-+ (void)httpForAprovalDetailWithApplyRequestId:(NSString *)applyId handler:(YJRequestBlock)handler;
++ (void)httpForNowWeatherModelWithHandler:(YJRequestBlock)handler;
 @end

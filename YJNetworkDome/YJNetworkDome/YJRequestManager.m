@@ -9,49 +9,40 @@
 #import "YJRequestManager.h"
 #import "YJAFNetManager.h"
 #import "YJURLManger.h"
+#import "YJNowWeatherModel.h"
 
 @implementation YJRequestManager
 /** 获取申请详情 */
-+ (void)httpForAprovalDetailWithApplyRequestId:(NSString *)applyId handler:(YJRequestBlock)handler {
-    [YJURLManger urlForAprovalDetailWithToken:@"Token" applyRequestId:applyId handler:^(NSString *url, id body) {
-        [YJRequestManager getRequestWithHttpString:url classString:@"ApprovalDetailModel" httpBlock:handler sessionOutloginSucceess:nil];
++ (void)httpForNowWeatherModelWithHandler:(YJRequestBlock)handler {
+    [YJURLManger urlForNowWeatherModelWithHandler:^(NSString *url, id body) {
+        [YJRequestManager getRequestWithHttpString:url classString:@"YJNowWeatherModel" httpBlock:handler sessionOutloginSucceess:nil];
     }];
 }
 
 #pragma mark - 请求发起和解析数据
 + (void)getRequestWithHttpString:(NSString *)url classString:(NSString *)classString httpBlock:(YJRequestBlock)block sessionOutloginSucceess:(void(^)())loginSuccess {
-    NSLog(@"\n\nget_url %@\n\n" , url);
     /** 判断是否有网络 */
     if (block) block(YJHttpServerStart , @"请求中");
     
-    [YJAFNetManager GET_Path:url completed:^(NSData *data, id JSONDict) {
-//        [NSClassFromString(classString) analyzeDat]
+    [YJAFNetManager GET_Path:url completed:^(NSData *stringData, id JSONDict) {
+        /** 解析数据 */
+        [NSClassFromString(classString) analyzeData:stringData resultBlock:^(AnalyzeDataResult ret, id object) {
+            if (ret == AnalyzeData_Fail) {
+                if (block) {
+                    block(YJHttpServerError , object);
+                }
+            }else if(ret == AnalyzeData_Success){
+                if (block){
+                    block(YJHttpServerSuccess , object);
+                }
+            }else if (ret == AnalyzeData_SessionOut){
+                /** 登录超时的情况 */
+            }
+
+        }];
     } failed:^(NSError *error) {
         
     }];
-    
-    /*
-     [YJAFNetManager GET_Path:url completed:^(NSData *stringData, id JSONDict) {
-     NSLog(@"JSONDict = %@",JSONDict);
-     // 解析数据
-     [NSClassFromString(classString) analyzeData:stringData resultBlock:^(AnalyzeDataResult ret, id object) {
-     if (ret == AnalyzeData_Fail) {
-     if (block) {
-     block(KCHttpServerError , object);
-     }
-     }else if(ret == AnalyzeData_Success){
-     if (block){
-     block(KCHttpServerSuccess , object);
-     }
-     }else if (ret == AnalyzeData_SessionOut){
-     // 登录超时的情况
-     }
-     }];
-     } failed:^(NSError *error) {
-     NSString * errorMsg = error.localizedFailureReason.length != 0 ? error.localizedFailureReason:@"请求错误<未知原因>" ;
-     if (block) block(KCHttpServerError,errorMsg);
-     }];
-     */
 }
 
 + (void)postRequestWithHttpString:(NSString *)url params:(NSDictionary *)params classString:(NSString *)classString httpBlock:(YJRequestBlock)block sessionOutloginSucceess:(void(^)())loginSuccess {

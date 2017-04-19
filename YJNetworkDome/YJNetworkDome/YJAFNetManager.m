@@ -10,19 +10,6 @@
 #import "AFNetworking.h"
 
 @implementation YJAFNetManager
-/**
- 单列
-
- @return 返回单例对象
- */
-+ (instancetype)sharedInstance {
-    static YJAFNetManager *manager = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        manager = [[YJAFNetManager alloc]init];
-    });
-    return manager;
-}
 
 + (void)GET_Path:(NSString *)path completed:(YJSuccessBlock)successBlock failed:(YJFailedBlock)failed {
     // 路径中的中文、特殊符号&％和空格都必须进行转译

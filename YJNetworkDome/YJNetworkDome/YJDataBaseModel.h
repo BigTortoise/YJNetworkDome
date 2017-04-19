@@ -8,25 +8,11 @@
 
 #import <Foundation/Foundation.h>
 
-
-typedef enum
-{
-    ApprovalStatusNew   = 0 ,      /** 新建  */
-    ApprovalStatusAuditing  ,      /** 审批中 */
-    ApprovalStatusRefused   ,      /** 已拒绝 */
-    ApprovalStatusStepOver  ,      /** 超级审批 */
-    ApprovalStatusCance     ,      /** 已撤销 */
-    ApprovalStatusAudited   ,      /** 同意并通过 */
-    ApprovalStatusFailed    ,      /** 审批未通过 */
-    ApprovalStatusAuditedAndNext , /** 同意并转交 */
-    
-}ApprovalStatusType;
-
-/** 返回代码的定义  1:成功  0:超时  -1:出错 */
+/** 返回代码的定义 */
 typedef NS_ENUM(NSInteger, AnalyzeDataResult) {
-    AnalyzeData_Success    = 1 ,
-    AnalyzeData_SessionOut = 0 ,
-    AnalyzeData_Fail       = -1 ,
+    AnalyzeData_Success    = 1 ,    /** 1:成功 */
+    AnalyzeData_SessionOut = 0 ,    /** 0:超时 */
+    AnalyzeData_Fail       = -1 ,   /** -1:出错 */
 };
 
 typedef void(^analyzeDataBlock)( AnalyzeDataResult ret , id object);
@@ -39,7 +25,7 @@ typedef void(^analyzeDataBlock)( AnalyzeDataResult ret , id object);
  @param block 代码的定义
  @return 正常数据
  */
-+(NSDictionary *)isFailData:(NSData *)data resultBlock:(analyzeDataBlock)block;
++ (NSDictionary *)isFailData:(NSData *)data resultBlock:(analyzeDataBlock)block;
 
 /**
  数据解析
@@ -47,5 +33,5 @@ typedef void(^analyzeDataBlock)( AnalyzeDataResult ret , id object);
  @param data 数据
  @param block 代码的定义
  */
-+(void)analyzeData:(NSData *)data resultBlock:(analyzeDataBlock)block;
++ (void)analyzeData:(NSData *)data resultBlock:(analyzeDataBlock)block;
 @end
