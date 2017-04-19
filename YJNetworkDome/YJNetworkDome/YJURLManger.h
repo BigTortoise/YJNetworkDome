@@ -19,10 +19,10 @@ typedef void (^UrlBlock) (NSString * url , id body);
 @interface YJURLManger : NSObject
 
 /**
- 获取申请详情
+ 获取现在天气情况
  
  @param handler 回调
  */
-+ (void)urlForNowWeatherModelWithHandler:(UrlBlock)handler;
++ (void)urlForNowWeatherWithHandler:(UrlBlock)handler;
 
 @end

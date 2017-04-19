@@ -20,15 +20,14 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    [YJRequestManager httpForNowWeatherModelWithHandler:^(YJRequestResult result, id object) {
+    [YJRequestManager httpForNowWeatherWithHandler:^(YJRequestResult result, id object) {
         if (result == YJHttpServerStart) {
-
+            /** 开始请求 */
         } else if (result == YJHttpServerError){
-            
+            /** 请求失败 */
         } else if (result == YJHttpServerSuccess){
-            YJNowWeatherModel *nowWeather = object;
+            /** 请求数据返回成功 */
         }
-        
     }];
 }
 

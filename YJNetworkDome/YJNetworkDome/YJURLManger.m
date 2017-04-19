@@ -9,7 +9,7 @@
 #import "YJURLManger.h"
 
 @implementation YJURLManger
-+ (void)urlForNowWeatherModelWithHandler:(UrlBlock)handler {
++ (void)urlForNowWeatherWithHandler:(UrlBlock)handler {
     NSString * url = @"https://api.seniverse.com/v3/weather/now.json?key=qltdahy3vbzkgioj&location=beijing&language=zh-Hans&unit=c";
      if (handler) handler(url, nil);
 }

@@ -12,9 +12,9 @@
 #import "YJNowWeatherModel.h"
 
 @implementation YJRequestManager
-/** 获取申请详情 */
-+ (void)httpForNowWeatherModelWithHandler:(YJRequestBlock)handler {
-    [YJURLManger urlForNowWeatherModelWithHandler:^(NSString *url, id body) {
+/** 获取现在天气情况 */
++ (void)httpForNowWeatherWithHandler:(YJRequestBlock)handler {
+    [YJURLManger urlForNowWeatherWithHandler:^(NSString *url, id body) {
         [YJRequestManager getRequestWithHttpString:url classString:@"YJNowWeatherModel" httpBlock:handler sessionOutloginSucceess:nil];
     }];
 }
@@ -28,20 +28,22 @@
         /** 解析数据 */
         [NSClassFromString(classString) analyzeData:stringData resultBlock:^(AnalyzeDataResult ret, id object) {
             if (ret == AnalyzeData_Fail) {
+                /** 解析数据失败 */
                 if (block) {
                     block(YJHttpServerError , object);
                 }
             }else if(ret == AnalyzeData_Success){
+                /** 解析数据成功 */
                 if (block){
                     block(YJHttpServerSuccess , object);
                 }
             }else if (ret == AnalyzeData_SessionOut){
-                /** 登录超时的情况 */
+                /** 解析数据超时 */
             }
 
         }];
     } failed:^(NSError *error) {
-        
+        /** 请求失败 */
     }];
 }
 

@@ -25,9 +25,9 @@ typedef void(^YJRequestBlock)(YJRequestResult result , id object);
 @interface YJRequestManager : NSObject
 
 /**
- 获取申请详情
+ 获取现在天气情况
 
  @param handler 回调
  */
-+ (void)httpForNowWeatherModelWithHandler:(YJRequestBlock)handler;
++ (void)httpForNowWeatherWithHandler:(YJRequestBlock)handler;
 @end
