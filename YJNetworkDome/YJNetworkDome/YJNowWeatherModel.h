@@ -13,6 +13,7 @@
 @interface YJLocationModel : NSObject
 @property (nonatomic,copy) NSString* locationId;
 @property (nonatomic,copy) NSString* name;
+@property (nonatomic,copy) NSString* path;
 @property (nonatomic,copy) NSString* country;
 @property (nonatomic,copy) NSString* timezone;
 @property (nonatomic,copy) NSString* timezone_offset;

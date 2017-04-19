@@ -315,6 +315,7 @@
 				TargetAttributes = {
 					0587DB411EA6042B00971279 = {
 						CreatedOnToolsVersion = 8.3.1;
+						DevelopmentTeam = F4EJCBMMZY;
 						ProvisioningStyle = Automatic;
 					};
 					0587DB5A1EA6042B00971279 = {
@@ -588,7 +589,9 @@
 			baseConfigurationReference = 10BC495BD3AB2F58910090D8 /* Pods-YJNetworkDome.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4EJCBMMZY;
 				INFOPLIST_FILE = YJNetworkDome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDome;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -600,7 +603,9 @@
 			baseConfigurationReference = 9AE654F29FA93D1495864FE7 /* Pods-YJNetworkDome.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F4EJCBMMZY;
 				INFOPLIST_FILE = YJNetworkDome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = devRen.YJNetworkDome;
 				PRODUCT_NAME = "$(TARGET_NAME)";

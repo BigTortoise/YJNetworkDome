@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "YJRequestManager.h"
+#import "YJNowWeatherModel.h"
 
 @interface ViewController ()
 
@@ -25,7 +26,7 @@
         } else if (result == YJHttpServerError){
             
         } else if (result == YJHttpServerSuccess){
-            
+            YJNowWeatherModel *nowWeather = object;
         }
         
     }];
