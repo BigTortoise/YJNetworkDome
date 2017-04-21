@@ -1,5 +1,5 @@
 # YJNetworkDome
-对AFN框架的二级封装以及JSON与Model的转化。
+对AFN框架的二级封装以及JSON与Model的转化，MVVM设计模式初次尝试。
 ## YJAFNetManager
 此类是对AFNetWorking的一级封装，包括:
 
